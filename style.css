@@ -1,0 +1,374 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background: #F5E9E2; /* fundo bege claro */
+  color: #2E2E2E; /* texto secundário grafite */
+  line-height: 1.6;
+  padding-top: 70px; /* espaço para nav fixa */
+}
+
+/* Navegação */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #83677B; /* roxo acinzentado */
+  transition: 0.3s, box-shadow 0.3s, transform 0.3s;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,.2);
+  z-index: 1000;
+}
+
+nav:hover {
+  background: #95768A; 
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
+}
+
+nav h1 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #FAF9F7;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+}
+
+nav a {
+  color: #FAF9F7;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #D9A066; 
+}
+
+/* Cards gerais */
+.card {
+  background: #FAF9F7;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.08);
+  padding: 2rem;
+  margin: 2rem auto;
+}
+
+/* Seção Apresentação */
+.apresentacao {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .perfil {
+    flex-direction: row; /* foto à esquerda, texto à direita */
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .info-perfil {
+    flex: 1;
+  }
+}
+
+.perfil img {
+  width: 220px;
+  height: 220px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+/* Hello World animado */
+.typing-neon {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  color: #7d486e;
+  text-shadow:
+    0 0 5px #83677B,
+    0 0 10px #83677B,
+    0 0 20px #83677B,
+    0 0 40px #D9A066,
+    0 0 80px #D9A066,
+    0 0 90px #D9A066;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #D9A066;
+  width: 12ch;
+  max-width: 100%;
+  animation: typing 3s steps(12) infinite alternate, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  0% { width: 0; }
+  50% { width: 12ch; }
+  100% { width: 0; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+/* Nome e subtítulo */
+.info-perfil h2 {
+  font-size: 2rem;
+  color: #2E2E2E;
+  margin-top: 0.5rem;
+}
+
+.info-perfil h3 {
+  font-size: 1.2rem;
+  color: #83677B;
+  margin-bottom: 1.5rem;
+}
+
+/* Dois cards abaixo do texto */
+.info-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card-apresentacao {
+  background: #FAF9F7;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.08);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+
+.card-apresentacao h3 {
+  color: #83677B;
+  margin-bottom: 0.5rem;
+}
+
+.card-apresentacao p {
+  color: #2E2E2E;
+}
+
+/* Projetos */
+#projetos.card {
+  max-width: 1100px;
+  margin: 2rem auto;
+}
+
+.subtitulo-projetos {
+  font-size: 1.4rem;
+  color: #83677B;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #D9A066;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+.grid-projetos {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.projeto {
+  background: #FAF9F7;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,.05);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 900px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projeto:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0,0,0,.15);
+}
+
+.projeto img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.conteudo-projeto {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.conteudo-projeto h3 {
+  color: #83677B;
+  font-size: 1.1rem;
+}
+
+/* Botão do repositório */
+.btn-repo {
+  align-self: flex-start;
+  background: #D9A066;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-repo:hover {
+  background: linear-gradient(45deg, #D9A066, #83677B);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Vídeo responsivo */
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 70%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Habilidades e Contato centralizados com mesma largura de Projetos */
+#habilidades.card,
+#contato.card {
+  max-width: 1100px;
+  margin: 2rem auto;
+}
+
+/* Habilidades */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.skills span {
+  background: #D9A066;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  transition: 0.3s, transform 0.3s, opacity 0.3s;
+}
+
+.skills span:hover {
+  background: linear-gradient(90deg, #D9A066, #83677B);
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Contato */
+#contato {
+  text-align: center;
+}
+
+.redes-contato {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.redes-contato .btn-repo {
+  padding: 0.8rem 1.5rem;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.redes-contato .btn-repo:hover {
+  background: linear-gradient(45deg, #D9A066, #83677B);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  background: #83677B;
+  color: #FAF9F7;
+  font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media (min-width: 768px) {
+  .projeto {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .projeto img,
+  .projeto .video-container {
+    width: 40%;
+    height: auto;
+    padding-bottom: 0;
+  }
+
+  .conteudo-projeto {
+    width: 60%;
+  }
+}
+
+@media (max-width: 767px) {
+  .perfil {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .perfil img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .info-perfil h2 {
+    font-size: 1.5rem;
+  }
+
+  .info-perfil p {
+    font-size: 1rem;
+  }
+}
