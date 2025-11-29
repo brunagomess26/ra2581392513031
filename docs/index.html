@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio - Bruna Rodrigues Gomes</title>
   <link rel="stylesheet" href="style.css">
+<!-- Lucide icons via CDN -->
+<link href="https://unpkg.com/lucide-static/font/lucide.css" rel="stylesheet">
+
 </head>
 <body>
   <!-- Navegação -->
@@ -14,54 +17,50 @@
       <li><a href="#apresentacao">Sobre</a></li>
       <li><a href="#projetos">Projetos</a></li>
       <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#extras">Outras informações</a></li>
       <li><a href="#contato">Contato</a></li>
     </ul>
   </nav>
 
-  <!-- Seção 1: Apresentação -->
+  <!-- Seção Apresentação -->
   <section id="apresentacao" class="apresentacao">
     <div class="perfil">
-      <!-- Foto -->
       <img src="img/foto.jpeg" alt="Foto de perfil">
 
-      <!-- Info do lado -->
       <div class="info-perfil">
-        <!-- Hello World animado -->
         <h1 class="typing-neon">Hello World!</h1>
-        
-        <!-- Nome e subtítulo -->
         <h2>Bruna Gomes</h2>
         <h3>Estudante e Desenvolvedora Web</h3>
 
-        <!-- Cards de apresentação -->
         <div class="info-cards">
+
           <div class="card-apresentacao card">
             <h3>Sobre mim</h3>
             <p>Sou graduanda de <strong>Desenvolvimento de Software Multiplataforma</strong> na Fatec Jacareí. 
               Possuo formação em Biomedicina e técnico em química, com experiência em análises laboratoriais e pesquisa.
-              Essa trajetória me proporcionou uma visão analítica, multidisciplinar e orientada à resolução de problemas.
+              Minha trajetória me proporcionou uma visão analítica, multidisciplinar e orientada à resolução de problemas.
             </p>
           </div>
 
           <div class="card-apresentacao card">
             <h3>Objetivo</h3>
-            <p>Meu objetivo é aplicar conhecimentos de computação e ciência no desenvolvimento de soluções tecnológicas voltadas para pesquisa científica, monitoramento ambiental e sustentabilidade. 
- Acredito no potencial transformador da tecnologia como agente de impacto social e científico, e tenho como propósito aliar ciência aplicada e inovação tecnológica, criando ferramentas práticas que contribuam para um futuro sustentável e inovador.</p>
+            <p>Meu objetivo é aplicar ciência e tecnologia no desenvolvimento de soluções práticas para pesquisa científica, monitoramento ambiental e sustentabilidade.
+            </p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Seção 2: Projetos -->
+  <!-- Seção Projetos -->
   <section id="projetos" class="card">
     <h2>Projetos</h2>
 
-    <!-- Projetos Acadêmicos -->
     <h3 class="subtitulo-projetos">Acadêmicos</h3>
     <div class="grid-projetos">
+
+      <!-- Projeto 1 -->
       <div class="projeto">
-        <!-- Vídeo local sem som -->
         <div class="video-container">
           <video controls muted>
             <source src="videos/projeto1.mp4" type="video/mp4">
@@ -69,50 +68,167 @@
           </video>
         </div>
 
-        <!-- Conteúdo do projeto -->
         <div class="conteudo-projeto">
-          <h3>Aplicação Web para visualização de horários de aula e ambientes</h3>
-          <p><strong>Descrição:</strong> Sistema para visualização do quadro de aulas dos cursos da Fatec Jacareí, filtrando por semestre, turma e ambiente institucional.</p>
-          <p><strong>Minha participação:</strong> Design e desenvolvimento do front-end e interações do back-end com banco de dados.</p>
+          <h3>Aplicação Web para visualização de horários de aula</h3>
+          <p><strong>Descrição:</strong> Sistema para visualização do quadro de aulas da Fatec Jacareí.</p>
+          <p><strong>Minha participação:</strong> Design e desenvolvimento do front-end + integração com banco.</p>
+
+          <p><strong>Tecnologias utilizadas:</strong>  
+            HTML, CSS, JavaScript, Node.js, Express, PostgreSQL, Git, GitHub.
+          </p>
+
           <a href="https://github.com/techcastlefatec/horarios-fatec" target="_blank" class="btn-repo">Acessar Repositório</a>
         </div>
       </div>
-    </div>
 
-    <!-- Projetos Pessoais -->
-    <h3 class="subtitulo-projetos">Pessoais</h3>
-    <div class="grid-projetos">
-      <div class="projeto">
-        <img src="img/projeto3.png" alt="Imagem do Projeto Pessoal">
-        <div class="conteudo-projeto">
-          <h3>Portfólio Pessoal</h3>
-          <p><strong>Descrição:</strong> Site pessoal para apresentar minha trajetória acadêmica e profissional.</p>
-          <p><strong>Minha participação:</strong> Desenvolvimento completo (HTML e CSS).</p>
-          <a href="https://github.com/seuusuario/seuprojeto" target="_blank" class="btn-repo">Acessar Repositório</a>
+      <!-- Projeto 2: ABP Dados Limnológicos -->
+<div class="projeto">
+
+  <div class="video-container">
+    <video controls muted>
+      <source src="videos/projeto2.mp4" type="video/mp4">
+      Seu navegador não suporta o vídeo.
+    </video>
+  </div>
+
+  <div class="conteudo-projeto">
+    <h3>ABP – Dados Limnológicos</h3>
+
+          <p><strong>Descrição:</strong> Aplicação web para visualização, consulta e disseminação de dados limnológicos e meteorológicos coletados em reservatórios, com filtros, tabelas, exportação CSV, gráficos temporais e mapas interativos.</p>
+
+          <p><strong>Minha participação:</strong> Atuei como <strong>Scrum Master</strong>, responsável por organização, acompanhamento e facilitação do time. Também contribuí com o <strong>design visual</strong> do projeto e desenvolvi <strong>páginas informativas</strong> sobre a aplicação.</p>
+
+          <p><strong>Tecnologias utilizadas:</strong> React, TypeScript, Node.js, Express, PostgreSQL, Docker, Docker Compose, Chart.js / Recharts, Leaflet / Mapbox, Git.</p>
+
+          <a href="https://github.com/Helloworld-fatec/abp-dados-limnologicos" target="_blank" class="btn-repo">Acessar Repositório</a>
         </div>
       </div>
+
+</div>
+
+    <h3 class="subtitulo-projetos">Pessoais</h3>
+    <div class="grid-projetos">
+
+      <!-- Projeto Portfólio -->
+      <div class="projeto">
+        <img src="img/projeto3.png" alt="Imagem do Projeto Pessoal">
+
+        <div class="conteudo-projeto">
+          <h3>Portfólio Pessoal</h3>
+          <p><strong>Descrição:</strong> Site pessoal para apresentar minha trajetória e projetos.</p>
+          <p><strong>Minha participação:</strong> Desenvolvimento completo (HTML + CSS).</p>
+
+          <p><strong>Tecnologias utilizadas:</strong> HTML5, CSS3, Git e GitHub.</p>
+
+          <!-- LINK CORRIGIDO -->
+          <a href="https://github.com/brunagomess26/Portfolio" target="_blank" class="btn-repo">Acessar Repositório</a>
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <!-- Seção 3: Habilidades -->
-  <section id="habilidades" class="card">
-    <h2>Habilidades & Tecnologias</h2>
-    <div class="skills">
-      <span>HTML5</span>
-      <span>CSS3</span>
-      <span>JavaScript</span>
-      <span>PostgreSQL</span>
-      <span>Scrum</span>
-    </div>
-  </section>
+<section id="habilidades" class="card habilidades">
+  <h2>Habilidades & Tecnologias</h2>
 
-  <!-- Seção 4: Contato -->
+  <ul class="lista-habilidades icones">
+    <li>
+      <!-- ícone laptop (inline SVG) -->
+      <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="3" y="5" width="18" height="11" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M2 19h20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      <div>
+        <strong>Front-end:</strong> React, TypeScript, HTML5, CSS3, JavaScript (ES6+)
+      </div>
+    </li>
+
+    <li>
+      <!-- ícone server -->
+      <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="3" y="3" width="18" height="6" rx="2" stroke="currentColor" stroke-width="1.5"/><rect x="3" y="11" width="18" height="6" rx="2" stroke="currentColor" stroke-width="1.5"/><rect x="3" y="19" width="18" height="2" rx="1" stroke="currentColor" stroke-width="1.5"/></svg>
+      <div>
+        <strong>Back-end:</strong> Node.js, Express, APIs REST
+      </div>
+    </li>
+
+    <li>
+      <!-- ícone database -->
+      <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><ellipse cx="12" cy="6" rx="8" ry="3" stroke="currentColor" stroke-width="1.5"/><path d="M4 6v6c0 1.657 3.582 3 8 3s8-1.343 8-3V6" stroke="currentColor" stroke-width="1.5"/></svg>
+      <div>
+        <strong>Bancos de Dados:</strong> PostgreSQL, SQL básico
+      </div>
+    </li>
+
+    <li>
+      <!-- ícone box (docker) -->
+      <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M3 7l9-4 9 4v6l-9 4-9-4V7z" stroke="currentColor" stroke-width="1.5"/><path d="M12 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      <div>
+        <strong>DevOps / Infra:</strong> Docker, Docker Compose
+      </div>
+    </li>
+
+    <li>
+      <!-- ícone chart -->
+      <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M3 3v18h18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M7 13v-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M12 17v-10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M17 9v-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <div>
+        <strong>Visualização de Dados:</strong> Chart.js, Recharts
+      </div>
+    </li>
+
+    <li>
+      <!-- ícone map -->
+      <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 3L5 5v14l4 2 6-2 4 2V5l-4-2-6 2z" stroke="currentColor" stroke-width="1.5"/></svg>
+      <div>
+        <strong>Mapas:</strong> Leaflet, Mapbox
+      </div>
+    </li>
+
+    <li>
+      <!-- ícone git branch -->
+      <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="6" cy="6" r="2" stroke="currentColor" stroke-width="1.5"/><circle cx="18" cy="6" r="2" stroke="currentColor" stroke-width="1.5"/><circle cx="6" cy="18" r="2" stroke="currentColor" stroke-width="1.5"/><path d="M8 6h8" stroke="currentColor" stroke-width="1.5"/><path d="M8 18h8" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v12" stroke="currentColor" stroke-width="1.5"/></svg>
+      <div>
+        <strong>Versionamento:</strong> Git, GitHub
+      </div>
+    </li>
+
+    <li>
+      <!-- ícone users -->
+      <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H7a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="1.5"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M23 21v-2a4 4 0 00-3-3.87" stroke="currentColor" stroke-width="1.5"/><path d="M16 3.13a4 4 0 010 7.75" stroke="currentColor" stroke-width="1.5"/></svg>
+      <div>
+        <strong>Metodologias:</strong> Scrum (Scrum Master), Kanban
+      </div>
+    </li>
+  </ul>
+</section>
+
+
+
+<!-- Seção Outras Informações -->
+<section id="extras" class="card">
+  <h2>Outras Informações</h2>
+
+  <h3 class="subtitulo-projetos">Formação Acadêmica</h3>
+  <ul class="lista-extras">
+    <li>Desenvolvimento de Software Multiplataforma</strong> – Fatec Jacareí (cursando)</li>
+    <li>Bacharelado em Biomedicina</li>
+    <li>Técnico em Química</li>
+  </ul>
+
+  <h3 class="subtitulo-projetos">Hobbies & Interesses</h3>
+  <ul class="lista-extras">
+    <li>Programação e desenvolvimento web</li>
+    <li>Ciência, pesquisa e tecnologia</li>
+    <li>Monitoramento ambiental e sustentabilidade</li>
+    <li>Leitura e música</li>
+  </ul>
+</section>
+
+
+
+  <!-- Seção Contato -->
   <section id="contato" class="card">
     <h2>Contato</h2>
     <p>Você pode me encontrar nos links abaixo:</p>
     <div class="redes-contato">
       <a href="https://github.com/brunagomess26" target="_blank" class="btn-repo">GitHub</a>
-      <a href="https://www.linkedin.com/in/bruna-gomes-540778190?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="btn-repo">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/bruna-gomes-540778190" target="_blank" class="btn-repo">LinkedIn</a>
     </div>
   </section>
 
@@ -120,5 +236,6 @@
   <footer>
     <p>© 2025 - Portfólio de Bruna Rodrigues Gomes | Fatec Jacareí</p>
   </footer>
+
 </body>
 </html>

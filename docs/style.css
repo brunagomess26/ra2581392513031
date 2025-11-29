@@ -269,12 +269,14 @@ nav a:hover {
   object-fit: contain;
 }
 
-/* Habilidades e Contato centralizados com mesma largura de Projetos */
+/* Habilidades, Outras informações e Contato centralizados com mesma largura de Projetos */
 #habilidades.card,
-#contato.card {
+#contato.card,
+#extras.card {
   max-width: 1100px;
   margin: 2rem auto;
 }
+
 
 /* Habilidades */
 .skills {
@@ -282,6 +284,64 @@ nav a:hover {
   flex-wrap: wrap;
   gap: 0.8rem;
   margin-top: 1rem;
+}
+
+/* Habilidades com ícones SVG inline */
+.habilidades {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 1.5rem 2rem;
+  background: #FAF9F7; /* mantém visual .card */
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.08);
+}
+
+.habilidades h2 {
+  color: #2E2E2E;
+  margin-bottom: 1rem;
+}
+
+/* grid responsivo */
+.lista-habilidades.icones {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px 24px;
+  padding: 0;
+  margin: 0;
+}
+
+/* item com ícone */
+.icones li {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.04);
+}
+
+.icones li:last-child { border-bottom: none; }
+
+.icon {
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  color: #83677B; /* ícones seguem a paleta */
+  flex-shrink: 0;
+}
+
+/* texto */
+.icones li div {
+  font-size: 0.98rem;
+  color: #2E2E2E;
+  line-height: 1.4;
+}
+
+/* duas colunas em telas maiores */
+@media (min-width: 900px) {
+  .lista-habilidades.icones {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .skills span {
@@ -298,6 +358,32 @@ nav a:hover {
   transform: scale(1.05);
   opacity: 0.9;
 }
+
+
+/* Outras Informações */
+#extras h2 {
+  color: #2E2E2E;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+#extras .subtitulo-projetos {
+  margin-top: 1.5rem;
+}
+
+.lista-extras {
+  margin-top: 1rem;
+  list-style: disc;
+  padding-left: 1.5rem;
+  line-height: 1.7;
+}
+
+.lista-extras li {
+  margin-bottom: 0.5rem;
+  color: #2E2E2E;
+  font-size: 1rem;
+}
+
 
 /* Contato */
 #contato {
