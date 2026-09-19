@@ -1,0 +1,5 @@
+Adicione nesta pasta uma fotografia real com o nome foto-bruna.jpg.
+Depois, substitua o bloco .profile-photo__placeholder em index.html por:
+
+<img src="img/perfil/foto-bruna.jpg" alt="Fotografia de Bruna Rodrigues Gomes">
+
